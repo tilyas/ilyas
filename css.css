@@ -1,0 +1,276 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to right,rgba(165, 42, 42, 0.747),rgb(104, 72, 12));
+}
+#sp{
+    width: 30%;
+    height: 100px;
+    float: right;
+    background-image: linear-gradient(to top,rgba(255, 253, 253, 0.605),rgba(62, 59, 59, 0));
+}
+#i1{
+    height: 100%;
+    width: 100px;
+    border-radius: 50%;
+}
+#h2h{
+    float: left;
+    line-height: 100px;
+    padding: 0px 3px;
+    margin:0px 10px;
+}
+nav a{
+    text-decoration: none;
+    color: bisque;
+    display: inline-block;
+
+}
+nav li{
+    display: inline-block;
+    line-height: 100px;
+    width: 148px;
+    text-align: center;
+    margin: 0 50px;
+   
+}
+nav{
+    width: 70%;
+    text-align: center;
+}
+#sp a{
+    color:black ;
+}
+nav a:hover{
+    height: 100%;
+    background-color: rgba(219, 219, 110, 0.708);
+    width: 100%;
+    animation-name: chc;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  
+}
+@keyframes chc {
+    10%{
+        background-color: rgb(208, 213, 48);
+    }
+    50%{
+        background-color: rgb(143, 0, 0);
+
+    }
+    90%{
+        background-color: rgba(0, 0, 0, 0.441);
+    }
+    100%{
+        visibility: hidden;
+    }
+    
+}
+aside{
+    border-top: 3px double white;
+    width: 30%;
+    height: 500px;
+    float: left;
+    text-align: center;
+    animation-name: asidecl;
+    animation-duration: 15s;
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+
+
+}
+main{
+
+    border-top: 3px double white;
+    width: 70%;
+    height: 500px;
+    float: right;
+    animation: mainanim 10s ease-out  infinite;
+    position: relative;
+}
+
+@keyframes mainanim {
+    10%{
+        background-color: rgb(132, 104, 104);
+    }
+    20%{
+        background-color: rgb(118, 49, 49);
+    }
+    30%{
+        background-color: rgb(134, 19, 19);
+    }
+    50%{
+        background-color: rgba(192, 42, 42, 0.491);
+    }
+    80%{
+        background-color: brown;
+    }
+    100%{
+        background-color: rgb(255, 0, 0);
+
+    }
+}
+#wal{
+    width: 90%;
+    margin-left: 5px;
+    margin-top: 5px
+}
+.ar{
+    padding: 5px;
+    font-family: monospace;
+    border-bottom: 5px solid white;
+}
+#box{
+    width: 400px;
+    height: 200px;
+    background-color: beige;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 10px;
+}
+#des{
+    padding: 5px;
+    font-family: monospace;
+    text-align: center;
+    border-bottom: 3px rgb(110, 110, 110) solid;
+}
+#yt{
+    width: 10%;
+    padding: 30px;
+    cursor:alias;
+}
+#sm{
+    width: 100%;
+    border-bottom: 2px double black;
+    display: flex;
+    justify-content: center;
+}
+#sm img{
+    width: 30px;
+   margin: 10px 5px;
+}
+footer{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    clear: both;
+    background-image: linear-gradient(to top,grey,black);
+    padding-top: 30px;
+    justify-content: center;
+    
+}
+footer img{
+height: 80%;
+}
+body{
+    width: 100%;
+}
+@media only screen and (max-width:1092px) {
+    nav li{
+        width:100px;
+    }
+    
+}
+@media only screen and (max-width:1010px) {
+    #sp{
+        width:35%;
+    }
+    
+}
+@media only screen and (max-width:867px) {
+    #sp{
+        width:40%
+    }
+}
+@media only screen and (max-width:760px) {
+    #sp{
+        width:43%
+    }
+}
+@media only screen and (max-width:728px) and (min-width:500px) {
+    #sp{
+        width:70%;
+    }
+    nav{
+        width:30%;
+    }
+    nav li{
+        display: block;
+        margin-bottom: 10px;
+        padding: 5px;
+        line-height: 10px;
+        font-family: monospace;
+
+    }
+}
+@media only screen and (max-width:534px) and (min-width:500px){
+    header{
+        height: 120px;
+    }
+    #sp{
+        background-image: none;
+        line-height: 200px;
+        float: right;
+        margin: 0;
+        padding: 0;
+    }
+    nav li{
+        float: left;
+        border: 1px solid white;
+        margin: 10px;
+    }
+}
+@media only screen and (max-width:620px) and (min-width:500px){
+    #box{
+        width: 45%;
+        height: 200px;
+        background-color: beige;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        padding: 10px;
+    }
+    aside{
+        width: 40%;
+    }
+    main{
+        width:60%;
+    }
+
+
+}
+#sm a:hover{
+    transform: scale(1.75);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+@keyframes asidecl {
+    10%{
+        background-image: linear-gradient(to right,white,black);
+    }
+    30%{
+        background-image: linear-gradient(to right,orange,yellow);
+    }
+    70%{
+        background-image: linear-gradient(to right,green,blue);
+    }
+    90%{
+        background-image: linear-gradient(to right,pink,brown);
+    }
+    100%{
+        background-image: linear-gradient(to right,grey,rgba(88, 94, 88, 0.304));
+    }
+}
